@@ -80,40 +80,29 @@
       transform: translateY(-2px);
     }
 
-    .contact {
-      margin-top: 36px;
+    footer {
+      margin-top: 40px;
       padding-top: 28px;
       border-top: 1px solid rgba(255, 255, 255, 0.25);
-    }
-
-    .contact h2 {
-      margin: 0 0 18px;
-      font-family: Georgia, serif;
-      font-size: 28px;
-      font-weight: 400;
-      font-style: italic;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
       letter-spacing: 2px;
     }
 
-    .contact a {
+    .footer-contact {
       display: block;
-      margin: 12px 0;
-      color: #ffffff;
-      font-size: 17px;
+      margin: 13px 0;
+      color: inherit;
       text-decoration: none;
     }
 
-    .contact a:hover,
-    .contact a:focus {
-      color: #ff5a5a;
-      text-decoration: underline;
+    .footer-contact:hover,
+    .footer-contact:focus {
+      color: #ffffff;
     }
 
-    footer {
-      margin-top: 32px;
-      color: rgba(255, 255, 255, 0.65);
-      font-size: 13px;
-      letter-spacing: 2px;
+    .signature {
+      margin-top: 26px;
       text-transform: uppercase;
     }
 
@@ -131,8 +120,9 @@
         font-size: 22px;
       }
 
-      .contact a {
-        font-size: 16px;
+      footer {
+        font-size: 12px;
+        letter-spacing: 1.5px;
       }
     }
   </style>
@@ -178,29 +168,39 @@
       >
         Notre page Facebook
       </a>
+
       <a
         class="button"
         href="https://docs.google.com/forms/d/e/1FAIpQLScNgWg_UXrclhMGitAPKWdN9tqURYQmsAsVMN2Wr0yVlfel6g/viewform?usp=dialog"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Suivre nos dates & actus
+        Suivre nos dates &amp; actus
       </a>
+
     </nav>
 
-    <section class="contact">
-      <h2>Nous contacter</h2>
+    <footer>
 
-      <a href="tel:+33610800733">
+      <a
+        class="footer-contact"
+        href="tel:+33610800733"
+      >
         06 10 80 07 33
       </a>
 
-      <a href="mailto:lesbrowniesss@gmail.com">
+      <a
+        class="footer-contact"
+        href="mailto:lesbrowniesss@gmail.com"
+      >
         lesbrowniesss@gmail.com
       </a>
-    </section>
 
-    <footer>The Brownies · Pop Rock Live</footer>
+      <div class="signature">
+        The Brownies · Pop Rock Live
+      </div>
+
+    </footer>
 
   </main>
 </body>
