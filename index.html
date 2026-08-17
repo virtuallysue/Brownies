@@ -6,69 +6,150 @@
 
   <title>The Brownies</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(145deg, #2a1712, #6b3526);
-      color: white;
+      background:
+        radial-gradient(circle at top, #687078 0%, #30353a 45%, #111315 100%);
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      text-align: center;
     }
 
     .page {
-      width: 90%;
-      max-width: 500px;
-      padding: 40px 20px;
+      width: 100%;
+      max-width: 720px;
+      margin: auto;
+      padding: 24px 18px 45px;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 35px;
-    }
-
-    a {
+    .hero {
+      width: 100%;
       display: block;
-      margin: 18px 0;
-      padding: 18px;
-      background-color: #ffffff;
-      color: #3b211a;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
     }
 
-    a:hover {
-      background-color: #f2d7c9;
+    .intro {
+      margin: 28px 0 24px;
+      font-family: "Cormorant Garamond", Didot, Georgia, serif;
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .divider {
+      width: 55px;
+      height: 2px;
+      margin: 0 auto 28px;
+      background-color: #ff2b2b;
+    }
+
+    .links {
+      display: grid;
+      gap: 16px;
+    }
+
+    .button {
+      display: block;
+      padding: 18px 22px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-left: 5px solid #ff2b2b;
+      background-color: rgba(12, 14, 16, 0.82);
+      color: #ffffff;
+      text-decoration: none;
+      font-family: "Cormorant Garamond", Didot, Georgia, serif;
+      font-size: 24px;
+      letter-spacing: 1px;
+      transition: 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus {
+      background-color: #ffffff;
+      color: #17191b;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 32px;
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        padding: 14px 12px 32px;
+      }
+
+      .intro {
+        font-size: 21px;
+      }
+
+      .button {
+        padding: 16px;
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
   <main class="page">
-    <h1>The Brownies</h1>
-    <p>Découvrez notre univers</p>
 
-    <a href="https://canva.link/thebrownies" target="_blank">
-      Notre bio
-    </a>
+    <img
+      class="hero"
+      src="Brownies-logo.png"
+      alt="The Brownies en concert"
+    >
 
-    <a href="https://www.youtube.com/watch?v=7tbPFakJV-g" target="_blank">
-      Nos extraits live
-    </a>
+    <p class="intro">Découvrez notre univers</p>
+    <div class="divider"></div>
 
-    <a href="https://www.facebook.com/lesbrowniess" target="_blank">
-      Notre page Facebook
-    </a>
+    <nav class="links" aria-label="Liens du groupe">
+
+      <a
+        class="button"
+        href="https://canva.link/thebrownies"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Notre bio
+      </a>
+
+      <a
+        class="button"
+        href="https://www.youtube.com/watch?v=7tbPFakJV-g"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Nos extraits live
+      </a>
+
+      <a
+        class="button"
+        href="https://www.facebook.com/lesbrowniess"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Notre page Facebook
+      </a>
+
+    </nav>
+
+    <footer>The Brownies · Pop Rock Live</footer>
+
   </main>
 </body>
 </html>
